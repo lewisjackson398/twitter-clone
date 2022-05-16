@@ -3,7 +3,7 @@ require("dotenv").config()
 const jwt = require("jsonwebtoken")
 
 const newToken = (payload) => {
-    return jwt.sign({ payload }, process.env.JWT_SECRET_KEY)
+    return jwt.sign({ payload }, 'lewis')
 }
 
 const register = async (req, res) => {
