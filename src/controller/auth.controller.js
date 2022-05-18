@@ -1,3 +1,4 @@
+process.setMaxListeners(0);
 const User = require("../model/user.model")
 const jwt = require("jsonwebtoken")
 
