@@ -1,4 +1,3 @@
-require('events').EventEmitter.prototype._maxListeners = 0;
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

@@ -1,4 +1,3 @@
-require('events').EventEmitter.prototype._maxListeners = 0;
 process.setMaxListeners(0);
 const express = require("express")
 const connect = require("./config/db")
