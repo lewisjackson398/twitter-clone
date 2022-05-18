@@ -1,3 +1,4 @@
+require('events').EventEmitter.prototype._maxListeners = 0;
 import './App.css';
 import Routes from "./Routes/Routes"
 

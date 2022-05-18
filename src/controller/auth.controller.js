@@ -1,3 +1,4 @@
+require('events').EventEmitter.prototype._maxListeners = 0;
 process.setMaxListeners(0);
 const User = require("../model/user.model")
 const jwt = require("jsonwebtoken")
