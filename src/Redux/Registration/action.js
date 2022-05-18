@@ -1,7 +1,6 @@
 
 import { REGISTER_REQUEST, REGISTER_SUCCESS, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_SUCCESS, TWEET_SUCCESS, FOLLOW_SUCCESS } from "./actiontype"
 import Axios from "axios"
-require('events').EventEmitter.defaultMaxListeners = 100;
 
 export const registering = (payload) => dispatch => {
     dispatch(registerrequest())
