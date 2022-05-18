@@ -15,8 +15,8 @@ app.post("/login", login)
 
 const start = async () => {
     await connect()
-    app.listen(2244, () => {
-        console.log("listening to port 2244")
+    app.listen(443, () => {
+        console.log("listening to port 443")
     })
 }
 start();

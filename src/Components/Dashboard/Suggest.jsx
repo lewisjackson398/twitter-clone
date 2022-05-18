@@ -20,7 +20,7 @@ function Suggest() {
     }
 
     useEffect(() => {
-        Axios.get("http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:2244/users", {})
+        Axios.get("https://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:443/users", {})
             .then((res) => setSugg(res.data.data))
     }, [])
 
