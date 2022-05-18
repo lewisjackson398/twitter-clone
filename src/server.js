@@ -1,4 +1,3 @@
-process.setMaxListeners(0);
 const express = require("express")
 const connect = require("./config/db")
 const cors = require("cors")

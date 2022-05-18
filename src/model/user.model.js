@@ -1,4 +1,4 @@
-process.setMaxListeners(0);
+
 const mongoose = require("mongoose")
 const bcrypt = require("bcrypt")
 const { Schema } = require("mongoose");
