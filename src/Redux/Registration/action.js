@@ -4,7 +4,7 @@ import Axios from "axios"
 
 export const registering = (payload) => dispatch => {
     dispatch(registerrequest())
-    Axios.post("https://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:443/register", {
+    Axios.post("http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:2244/register", {
         ...payload
     }).then((res) => {
         //console.log(res.data)
@@ -21,7 +21,7 @@ export const loggingout = () => dispatch => {
 
 export const SignInlogin = (payload) => dispatch => {
     dispatch(loginRequest())
-    Axios.post("https://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:443/login", {
+    Axios.post("http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:2244/login", {
         ...payload
     }).then((res) => {
         console.log(res.data.user);
@@ -72,7 +72,7 @@ const logout = (payload) => {
 export const tweet = (payload) => dispatch => {
     console.log(payload.tweet, payload.id)
 
-    Axios.patch(`https://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:443/users/${payload.id}`, {
+    Axios.patch(`http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:2244/users/${payload.id}`, {
         tweets: payload.tweet
     }).then((res) => {
         console.log(res.data.data);
@@ -94,7 +94,7 @@ const tweetsuccess = (payload) => {
 
 export const follow1 = (payload) => dispatch => {
     // console.log(payload);
-    Axios.patch(`https://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:443/users/follow/${payload.mine}`, {
+    Axios.patch(`http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:2244/users/follow/${payload.mine}`, {
         follow: payload.sec
     }).then((res) => {
         console.log(res.data.data);

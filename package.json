@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon src/server.js",
-    "client": "set HTTPS=true&&react-scripts start",
+    "client": "react-scripts start",
     "build": "react-scripts build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
