@@ -1,12 +1,14 @@
-## Run "git clone https://github.com/lewisjackson398/twitter-clone.git" in terminal
+## To run locally update the following:
 
-## Run "npm install"
+#### Run "git clone https://github.com/lewisjackson398/twitter-clone.git" in terminal
 
-## Change the all links from  "http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:" to "http:localhost:"
+#### Run "npm install"
 
-## Create a mongo db collection and change the MONGOD_URI to match your string.
+#### Change the all links from  "http://ec2-3-9-189-76.eu-west-2.compute.amazonaws.com:" to "http://localhost:"
 
-## Update the jwt token password to whatever you like
+#### Create a mongo db collection and change the MONGOD_URI to match your connection string.
 
-## Run "npm run dev" to run the server and client side simultaneously
+#### Update the jwt token password to whatever you like
+
+#### Run "npm run dev" to run the server and client side simultaneously
 
